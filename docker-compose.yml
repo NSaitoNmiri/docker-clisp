@@ -1,0 +1,11 @@
+version: '2'
+services:
+  ssp:
+    build:
+      context: ssp
+      args:
+        - USER
+    stdin_open: true
+    tty: true
+    volumes:
+       - ./workdir:/home/${USER}/workdir
