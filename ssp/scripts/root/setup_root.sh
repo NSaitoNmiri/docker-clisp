@@ -2,7 +2,7 @@
 
 set -eu
 
-DEBIAN_FRONTEND=noninteractive apt-get install -y language-pack-ja lv
+DEBIAN_FRONTEND=noninteractive apt-get install -y language-pack-ja lv nkf
 echo "Asia/Tokyo" > /etc/timezone
 rm /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
