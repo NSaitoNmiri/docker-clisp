@@ -1,8 +1,8 @@
 version: '2'
 services:
-  ssp:
+  clisp:
     build:
-      context: ssp
+      context: clisp
       args:
         - USER
     stdin_open: true
